@@ -7,9 +7,9 @@ in the common instruction steps first the opcode (first 4 bits)  will be process
 
 Notes for those who want to apply changes on the project or enhance it :
 1. PC maximum value is 2 because this 8 bit processor only process three instructions using the CU:
-A. 0000 load A
-B. 0001 load B
-C. 0010 Add A + B
+A. (0000 load A)
+B. (0001 load B)
+C. (0010 Add A + B)
 2. step counter maximum value is 6 because the max steps for an instruction is 6
 3. ALU only performs Addition by taking values directly from Reg A and Reg B , if you want to add more operations to the ALU to perform and making the ALU has an opcode input add a 4 bit bus from the IR to the ALU
 connected by a controlled buffer That is controlled by CU.
